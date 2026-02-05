@@ -1,0 +1,356 @@
+[
+  {
+    "model": "users.user",
+    "pk": "00000000-0000-0000-0000-000000000001",
+    "fields": {
+      "email": "admin@vehicules-occasion.fr",
+      "password": "pbkdf2_sha256$720000$test$test",
+      "first_name": "Admin",
+      "last_name": "Système",
+      "role": "ADMIN",
+      "is_staff": true,
+      "is_superuser": true,
+      "is_active": true
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "00000000-0000-0000-0000-000000000002",
+    "fields": {
+      "email": "vendeur@vehicules-occasion.fr",
+      "password": "pbkdf2_sha256$720000$test$test",
+      "first_name": "Jean",
+      "last_name": "Vendeur",
+      "role": "SELLER",
+      "is_active": true
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "00000000-0000-0000-0000-000000000003",
+    "fields": {
+      "email": "client1@example.com",
+      "password": "pbkdf2_sha256$720000$test$test",
+      "first_name": "Marie",
+      "last_name": "Dupont",
+      "phone_number": "+33612345678",
+      "role": "CLIENT",
+      "is_active": true
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "00000000-0000-0000-0000-000000000004",
+    "fields": {
+      "email": "client2@example.com",
+      "password": "pbkdf2_sha256$720000$test$test",
+      "first_name": "Pierre",
+      "last_name": "Martin",
+      "role": "CLIENT",
+      "is_active": true
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": "10000000-0000-0000-0000-000000000001",
+    "fields": {
+      "title": "Berline familiale économique",
+      "description": "Parfaite voiture familiale, bien entretenue, faible consommation.",
+      "category": "CAR",
+      "brand": "Peugeot",
+      "model": "308",
+      "year": 2021,
+      "mileage": 45000,
+      "fuel_type": "DIESEL",
+      "transmission": "MANUAL",
+      "power_hp": 130,
+      "color": "Gris Artense",
+      "condition": "EXCELLENT",
+      "price": "18500.00",
+      "is_active": true,
+      "is_featured": true,
+      "slug": "peugeot-308-2021-berline-familiale"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": "10000000-0000-0000-0000-000000000002",
+    "fields": {
+      "title": "SUV Premium tout équipé",
+      "description": "SUV haut de gamme avec toutes les options. Cuir, toit panoramique, GPS.",
+      "category": "CAR",
+      "brand": "BMW",
+      "model": "X3",
+      "year": 2022,
+      "mileage": 25000,
+      "fuel_type": "HYBRID",
+      "transmission": "AUTOMATIC",
+      "power_hp": 245,
+      "color": "Noir Saphir",
+      "condition": "EXCELLENT",
+      "price": "52000.00",
+      "is_active": true,
+      "is_featured": true,
+      "slug": "bmw-x3-2022-suv-premium"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": "10000000-0000-0000-0000-000000000003",
+    "fields": {
+      "title": "Citadine électrique",
+      "description": "Idéale pour la ville, zéro émission, autonomie 300km.",
+      "category": "CAR",
+      "brand": "Renault",
+      "model": "Zoé",
+      "year": 2023,
+      "mileage": 8000,
+      "fuel_type": "ELECTRIC",
+      "transmission": "AUTOMATIC",
+      "power_hp": 135,
+      "color": "Blanc Glacier",
+      "condition": "NEW",
+      "price": "24900.00",
+      "is_active": true,
+      "is_featured": true,
+      "slug": "renault-zoe-2023-citadine-electrique"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": "10000000-0000-0000-0000-000000000004",
+    "fields": {
+      "title": "Break spacieux 7 places",
+      "description": "Grand break 7 places, parfait pour les grandes familles.",
+      "category": "CAR",
+      "brand": "Volkswagen",
+      "model": "Touran",
+      "year": 2020,
+      "mileage": 68000,
+      "fuel_type": "DIESEL",
+      "transmission": "AUTOMATIC",
+      "power_hp": 150,
+      "color": "Bleu Atlantic",
+      "condition": "GOOD",
+      "price": "22500.00",
+      "is_active": true,
+      "slug": "volkswagen-touran-2020-break-7-places"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": "10000000-0000-0000-0000-000000000005",
+    "fields": {
+      "title": "Sportive GT occasion",
+      "description": "Coupé sportif en excellent état, entretien complet.",
+      "category": "CAR",
+      "brand": "Audi",
+      "model": "TT",
+      "year": 2019,
+      "mileage": 42000,
+      "fuel_type": "GASOLINE",
+      "transmission": "AUTOMATIC",
+      "power_hp": 230,
+      "color": "Rouge Tango",
+      "condition": "EXCELLENT",
+      "price": "35000.00",
+      "is_active": true,
+      "slug": "audi-tt-2019-sportive-gt"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": "10000000-0000-0000-0000-000000000006",
+    "fields": {
+      "title": "Moto roadster sportive",
+      "description": "Roadster nerveux et agile, parfait pour la route.",
+      "category": "MOTORCYCLE",
+      "brand": "Yamaha",
+      "model": "MT-07",
+      "year": 2022,
+      "mileage": 12000,
+      "fuel_type": "GASOLINE",
+      "transmission": "MANUAL",
+      "power_hp": 73,
+      "color": "Bleu Racing",
+      "condition": "EXCELLENT",
+      "price": "7200.00",
+      "is_active": true,
+      "slug": "yamaha-mt07-2022-roadster"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": "10000000-0000-0000-0000-000000000007",
+    "fields": {
+      "title": "Utilitaire professionnel",
+      "description": "Fourgon aménagé pour professionnels, grand volume.",
+      "category": "UTILITY",
+      "brand": "Renault",
+      "model": "Master",
+      "year": 2021,
+      "mileage": 85000,
+      "fuel_type": "DIESEL",
+      "transmission": "MANUAL",
+      "power_hp": 150,
+      "color": "Blanc",
+      "condition": "GOOD",
+      "price": "28000.00",
+      "is_active": true,
+      "slug": "renault-master-2021-utilitaire"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": "10000000-0000-0000-0000-000000000008",
+    "fields": {
+      "title": "Camping-car profilé",
+      "description": "Camping-car 4 places, cuisine équipée, douche.",
+      "category": "CAMPER",
+      "brand": "Fiat",
+      "model": "Ducato Camper",
+      "year": 2020,
+      "mileage": 32000,
+      "fuel_type": "DIESEL",
+      "transmission": "MANUAL",
+      "power_hp": 140,
+      "color": "Blanc",
+      "condition": "GOOD",
+      "price": "48000.00",
+      "is_active": true,
+      "slug": "fiat-ducato-2020-camping-car"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": "10000000-0000-0000-0000-000000000009",
+    "fields": {
+      "title": "Berline hybride rechargeable",
+      "description": "Technologie hybride rechargeable, 50km en électrique.",
+      "category": "CAR",
+      "brand": "Toyota",
+      "model": "Prius Plugin",
+      "year": 2022,
+      "mileage": 18000,
+      "fuel_type": "PLUGIN_HYBRID",
+      "transmission": "AUTOMATIC",
+      "power_hp": 122,
+      "color": "Gris Platine",
+      "condition": "EXCELLENT",
+      "price": "32000.00",
+      "is_active": true,
+      "slug": "toyota-prius-2022-hybride-rechargeable"
+    }
+  },
+  {
+    "model": "vehicles.vehicle",
+    "pk": "10000000-0000-0000-0000-000000000010",
+    "fields": {
+      "title": "4x4 baroudeur",
+      "description": "Vrai 4x4 tout-terrain, blocage de différentiel.",
+      "category": "CAR",
+      "brand": "Jeep",
+      "model": "Wrangler",
+      "year": 2021,
+      "mileage": 35000,
+      "fuel_type": "GASOLINE",
+      "transmission": "MANUAL",
+      "power_hp": 272,
+      "color": "Vert Sarge",
+      "condition": "GOOD",
+      "price": "45000.00",
+      "is_active": true,
+      "slug": "jeep-wrangler-2021-4x4"
+    }
+  },
+  {
+    "model": "inventory.inventoryitem",
+    "fields": {
+      "vehicle": "10000000-0000-0000-0000-000000000001",
+      "quantity": 1,
+      "location": "Showroom A",
+      "status": "AVAILABLE"
+    }
+  },
+  {
+    "model": "inventory.inventoryitem",
+    "fields": {
+      "vehicle": "10000000-0000-0000-0000-000000000002",
+      "quantity": 1,
+      "location": "Showroom A",
+      "status": "AVAILABLE"
+    }
+  },
+  {
+    "model": "inventory.inventoryitem",
+    "fields": {
+      "vehicle": "10000000-0000-0000-0000-000000000003",
+      "quantity": 1,
+      "location": "Showroom B",
+      "status": "AVAILABLE"
+    }
+  },
+  {
+    "model": "inventory.inventoryitem",
+    "fields": {
+      "vehicle": "10000000-0000-0000-0000-000000000004",
+      "quantity": 1,
+      "location": "Showroom A",
+      "status": "AVAILABLE"
+    }
+  },
+  {
+    "model": "inventory.inventoryitem",
+    "fields": {
+      "vehicle": "10000000-0000-0000-0000-000000000005",
+      "quantity": 1,
+      "location": "Showroom B",
+      "status": "RESERVED"
+    }
+  },
+  {
+    "model": "inventory.inventoryitem",
+    "fields": {
+      "vehicle": "10000000-0000-0000-0000-000000000006",
+      "quantity": 1,
+      "location": "Zone Moto",
+      "status": "AVAILABLE"
+    }
+  },
+  {
+    "model": "inventory.inventoryitem",
+    "fields": {
+      "vehicle": "10000000-0000-0000-0000-000000000007",
+      "quantity": 1,
+      "location": "Parc Utilitaires",
+      "status": "AVAILABLE"
+    }
+  },
+  {
+    "model": "inventory.inventoryitem",
+    "fields": {
+      "vehicle": "10000000-0000-0000-0000-000000000008",
+      "quantity": 1,
+      "location": "Zone Camping-car",
+      "status": "AVAILABLE"
+    }
+  },
+  {
+    "model": "inventory.inventoryitem",
+    "fields": {
+      "vehicle": "10000000-0000-0000-0000-000000000009",
+      "quantity": 1,
+      "location": "Showroom A",
+      "status": "AVAILABLE"
+    }
+  },
+  {
+    "model": "inventory.inventoryitem",
+    "fields": {
+      "vehicle": "10000000-0000-0000-0000-000000000010",
+      "quantity": 1,
+      "location": "Showroom B",
+      "status": "SOLD"
+    }
+  }
+]
